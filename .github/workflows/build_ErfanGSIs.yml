@@ -1,3 +1,9 @@
+import requests
+from bs4 import BeautifulSoup
+ 
+urls = "http://news.sina.com.cn/china/"
+res = requests.get(urls)
+soup = BeautifulSoup(res.text,'html5lib')
 name: build_ErfanGSIs
 
 on:
